@@ -1,3 +1,4 @@
-.App {
-  text-align: center;
+.App{
+    overflow-y: hidden;
+    height: 200vh;
 }

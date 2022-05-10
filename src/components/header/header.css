@@ -2,10 +2,12 @@
     height: 60px;
     background-color: black;
     align-items: center;
-    position: sticky;
+    position: fixed;
     display: flex;
     top: 0;
     z-index: 100;
+    width: 100%;
+
 
 
 
@@ -36,6 +38,7 @@
     padding: 5px;
     height: 22px !important;
     background-color: #cd9042;
+    cursor: pointer;
 }
 
 .header-optionOne{
