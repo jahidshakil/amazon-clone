@@ -1,12 +1,21 @@
 import React from 'react'
 import './header.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { useStateValue } from '../stateProvider/StateProvider';
+
 
 const Header = () => {
+    const [{basket}] = useStateValue();
+
   return (
       <div className='header'>
-          <img className='header-logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='' />
+          <nav>
+          <Link to="/">
+              <img className='header-logo' src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='' />
+            </Link>
+        </nav>
           <div className='header-search'>
               <input className='header-searchInput' type="text" />
               <FontAwesomeIcon className='header-searchIcon' icon={faSearch} />
@@ -24,13 +33,14 @@ const Header = () => {
                   <span className='header-optionOne'>Your</span>
                   <span className='header-optionTwo'>Prime</span>
               </div>
-
-              <div className='header-basket'>
-
-              <FontAwesomeIcon className='shopping-cart' icon={faShoppingCart} />
-              <span className='header-basketCount header-optionalLineTwo'>0</span>
-
-          </div>
+              <nav>
+                  <Link to="/checkout">                  
+                  <div className='header-basket'>
+                   <FontAwesomeIcon className='shopping-cart' icon={faShoppingCart} />
+                          <span className='header-basketCount header-optionalLineTwo'>{ basket?.length}</span>
+                    </div>
+                    </Link>
+                </nav>
           </div>
       </div>
   )
