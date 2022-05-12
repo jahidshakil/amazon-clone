@@ -9,7 +9,7 @@ const Home = () => {
         <div className='home-row'>
         <Product id="111" title='iPhone 11 Pro' price={999.99} image="https://mymobilesnews.com/wp-content/uploads/2022/02/iPhone-11-Pro_.jpg" />
           
-        <Product id="113" title='2019 Apple MacBook Pro (16-inch, 16GB RAM, 512GB Storage, 2.6GHz Intel Core i7) - Space Gray' price={1299.99} image="https://m.media-amazon.com/images/I/71pC69I3lzL._AC_SL1500_.jpg" />
+        <Product id="112" title='2019 Apple MacBook Pro (16-inch, 16GB RAM, 512GB Storage, 2.6GHz Intel Core i7) - Space Gray' price={1299.99} image="https://m.media-amazon.com/images/I/71pC69I3lzL._AC_SL1500_.jpg" />
         </div>
         
         <div className='home-row'>
