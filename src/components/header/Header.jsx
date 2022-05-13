@@ -21,10 +21,12 @@ const Header = () => {
               <FontAwesomeIcon className='header-searchIcon' icon={faSearch} />
           </div>
           <div className='header-nav'>
+              <Link to="/login" style={{ textDecoration: 'none' }}>
               <div className='header-option'>
                   <span className='header-optionOne'>Hello Guest</span>
                   <span className='header-optionTwo'>Sign In</span>
               </div>
+              </Link>
               <div className='header-option'>
                   <span className='header-optionOne'>Orders</span>
                   <span className='header-optionTwo'>Returns</span>
@@ -34,7 +36,7 @@ const Header = () => {
                   <span className='header-optionTwo'>Prime</span>
               </div>
               <nav>
-                  <Link to="/checkout">                  
+                  <Link to="/checkout" style={{textDecoration: 'none'}}>                  
                   <div className='header-basket'>
                    <FontAwesomeIcon className='shopping-cart' icon={faShoppingCart} />
                           <span className='header-basketCount header-optionalLineTwo'>{ basket?.length}</span>
