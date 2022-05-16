@@ -5,7 +5,7 @@ import Subtotal from '../subtotal/Subtotal'
 import './checkout.css'
 
 const Checkout = () => {
-  const [{ basket }] = useStateValue();
+  const [{ basket} , dispatch] = useStateValue();
   return (
     <div className='checkout'>
       <div className='checkout-left'>

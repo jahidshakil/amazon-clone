@@ -1,0 +1,12 @@
+.payment{
+    margin-top: 60px;
+    background-color: white;
+}
+.payment-container{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgba(234,237,237);
+    border-bottom: 1px solid lightgray;
+}
+
