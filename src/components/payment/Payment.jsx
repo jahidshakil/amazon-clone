@@ -23,7 +23,7 @@ const Payment = () => {
 
 
     useEffect(() => {
-        //generate the special stripe secret that allows us to charge a customer
+        //generate the special stripe secret that allows to charge a customer
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
@@ -34,6 +34,8 @@ const Payment = () => {
         getClientSecret();
     }, [basket])
 
+    console.log('Secret is', clientSecret)
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -43,11 +45,11 @@ const Payment = () => {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-            //paymentIntent = payment confirmatiuon
+            //paymentIntent = payment confirmation
             setSucceeded(true)
             setError(null);
             setProcessing(false);
-            navigate.replace('/orders')
+            navigate('/orders')
 
         })
 
