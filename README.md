@@ -1,3 +1,21 @@
+This is an inspired clone application of amazon. This project covers following features:
+
+1.Fully responsive
+2. Reusable components
+3. Login authintication using firebase
+4. Add item to cart
+5. Remove item from cart
+6. Checkout
+7. Payment system using Stripe
+Technologies used:
+1. Reactjs
+2. CSS
+3. Redux
+4. React Hooks
+5. Firebase
+6. Stripe
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
