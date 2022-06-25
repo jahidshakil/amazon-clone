@@ -23,6 +23,9 @@ Technologies used:
 ![Screenshot (178)](https://user-images.githubusercontent.com/73303787/175787067-5bd68a0b-15c0-43de-8b7b-f17ff0bb8fb9.png)
 
 
+![Screenshot (180)](https://user-images.githubusercontent.com/73303787/175787130-a9a08687-bb35-45c1-b827-de7fd64d2a8f.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
