@@ -16,6 +16,7 @@ Technologies used:
 6. Stripe
 
 
+![Screenshot (177)](https://user-images.githubusercontent.com/73303787/175787008-780bc1b6-eee2-44ac-956a-59401ade9cc9.png)
 
 
 # Getting Started with Create React App
